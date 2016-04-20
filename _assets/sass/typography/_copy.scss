@@ -1,5 +1,5 @@
 $font_plain: Sans-Serif;
 
-@include font-face( font-light, 'fonts/colablig-webfont' );
-@include font-face( font-thin, 'fonts/colabthi-webfont' );
-@include font-face( font-med, 'fonts/colabmed-webfont' );
+@include font-face( font-light, '../fonts/colablig-webfont' );
+@include font-face( font-thin, '../fonts/colabthi-webfont' );
+@include font-face( font-med, '../fonts/colabmed-webfont' );
