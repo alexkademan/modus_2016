@@ -2,14 +2,20 @@ $width-medium: pem(641); /* 768px */
 $width-small:  pem(640); /* 640px */
 
 
+
+$max-width: pem(1240);
+$small_size: pem(720);
+$large_size: pem(1140);
+
+$palm_size: new-breakpoint(max-width $small_size 12);
+$medium: new-breakpoint(min-width $small_size 12);
+$large: new-breakpoint(min-width $large_size 12);
+$col_reading_width: pem(580);
+
 // Change the grid settings
 $max-width: pem(1200);
-
+$main_gutter: ($gutter * 0.75);
 $ak_padding: ($gutter*0.75);
-
-// Define your breakpoints
-$med_breakpoint: new-breakpoint(min-width $width-medium 12);
-$small_breakpoint: new-breakpoint(max-width $width-small 2);
 
 
 // masthead:
@@ -17,3 +23,9 @@ $mh_med_height: 50px;
 $mh_med_padding-top: pem(4);
 $mh_med_padding-sides: pem(4);
 $mh_med_padding-bottom: pem(4);
+
+// NAV vars:
+$nav-off-canvas-width: 87%;
+$navbtn_height: pem( 60 );
+
+$main_logo_width: pem(115);

@@ -13,6 +13,12 @@
   "bourbon/bourbon",
   "neat/neat",
   "font-awesome/font-awesome",
+  "mixins/mixins",
   "variables-site/variables-site",
-  "typography/typography"
+  "typography/typography",
+  "modules/accessibility"
 ;
+
+
+// the actual page layout:
+@import 'elements/elements';
