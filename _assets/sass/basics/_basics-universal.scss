@@ -6,6 +6,10 @@ html {
   background: #CCC;
 }
 
+body {
+  padding-top: $navbtn_height;
+}
+
 .outer {
   @include outer-container;
 }

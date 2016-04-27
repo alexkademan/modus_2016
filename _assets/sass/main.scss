@@ -21,4 +21,7 @@
 
 
 // the actual page layout:
-@import 'elements/elements';
+@import
+  "basics/basics",
+  "main_navigation/main_navigation"
+;

@@ -41,7 +41,10 @@ span.stripe { // this is for the menu to hide behind.
 }
 
 .page {
-  padding-top: $navbtn_height;
+  display: block;
+  float: left;
+  clear: both;
+
 }
 div.outside {
   position: relative;
