@@ -9,6 +9,19 @@
  * @package _s
  */
 
+
+// NEW ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+require get_template_directory() . '/navigation-object.php';
+$subs = array(6);
+$navigation = new get_main_navigation( $subs );
+// print_r($navigation);
+// echo "\n ------------------------------------ ********************* --------------------------------- \n";
+// // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// // OLD ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// $main_nav = get_custom_main_nav($subs);
+// print_r($main_nav);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -35,17 +48,10 @@
 	        <a class="toggle"></a>
 	      </span>
 
-	      <a class="site-title" href="{{ site.baseurl }}">logo</a>
+	      <a class="site-title" href="<?php echo get_bloginfo('wpurl') ?>">logo</a>
 
 	    </span>
-
-	    <nav id="site-nav" class="site-nav">
-	      <ul id="mainNav" class="mainNav">
-	        <li><a class="page-link" href="#">Link</a></li>
-
-	      </ul>
-	    </nav>
-
+			<?php get_template_part( 'template-parts/content', 'main-nav' ); ?>
 	  </div>
 
 	</header>

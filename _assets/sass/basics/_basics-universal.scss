@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  padding-top: $navbtn_height;
+
 }
 
 .outer {
@@ -23,6 +23,7 @@ footer.site-footer {
 }
 
 body > .page {
+  padding-top: $navbtn_height;
   background: #FFF;
 }
 

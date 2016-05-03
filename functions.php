@@ -154,3 +154,4 @@ require get_template_directory() . '/inc/jetpack.php';
 
 
 require get_template_directory() . '/functions2.php';
+require get_template_directory() . '/functionsOLDsite.php';

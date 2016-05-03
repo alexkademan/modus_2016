@@ -39,19 +39,11 @@ span.stripe { // this is for the menu to hide behind.
   background-color: #F4F4F4;
   z-index: 1000;
 }
-
-.page {
-  display: block;
-  float: left;
-  clear: both;
-
-}
 div.outside {
   position: relative;
 }
 // mobile menu OFF:
 nav.site-nav {
-
   position: absolute;
   left: 0;
   top: $navbtn_height;
