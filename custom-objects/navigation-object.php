@@ -1,14 +1,14 @@
 <?php
 
-class get_main_navigation {
+class get_main_navigation extends site_info {
 
-  function __construct( $subs = FALSE ) {
-    // $this->subs = $subs;
-    $this->full_navigaiton = $this->get_full_navigation( $subs ); // find all the root pages
+  function __construct( ) {
+    parent::__construct(); // get the site-wide variables that are typed into site-info.php
+    $this->full_navigaiton = $this->get_full_navigation( $this->subs ); // find all the root pages
   }
 
 
-  private function get_full_navigation( $subs ) {
+  private function get_full_navigation( $subs = FALSE ) {
     // find all the root pages:
     $full_navigation = $this->get_pages_info(0);
 
@@ -25,8 +25,6 @@ class get_main_navigation {
         // echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
         // OR, go thru every page and look for children.
         $full_navigation[$key]['children'] = $this->get_pages_info($page['ID']);
-        // print_r( $full_navigation[$key] );
-        // print_r( $full_navigation );
       }
     }
     return $full_navigation;

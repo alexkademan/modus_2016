@@ -11,10 +11,8 @@
 
 
 // NEW ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-require get_template_directory() . '/navigation-object.php';
-$subs = array(6);
-$navigation = new get_main_navigation( $subs );
-// print_r($navigation);
+require get_template_directory() . '/custom-objects/custom-objects.php';
+
 // echo "\n ------------------------------------ ********************* --------------------------------- \n";
 // // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // // OLD ++++++++++++++++++++++++++++++++++++++++++++++++++++++
